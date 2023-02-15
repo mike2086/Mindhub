@@ -6,13 +6,14 @@
 
 header {
     background-color: orange;
-    height: 30%;
+    min-height: 30%;
+    padding: 2px;
 }
 
 h1 {
     display: inline-block;
-    width: 70%;
-    height: 20%;
+    width: 50%;
+    min-height: 20%;
     padding-bottom: 5px;
     font-size: xx-large;
     font-family: cursive;
@@ -21,23 +22,33 @@ h1 {
 a {
     display: inline-block;
     position: relative;
-    padding: 1px;
-    margin: 1px;
+    padding: 5px;
+    margin: 5px;
     top: 1rem;
     text-decoration: none;
     font-family: cursive;
     font-weight: bolder;
+    font-size: small;
     width: 8%;
-    height: 10%;
+    min-height: 10%;
     background-color: yellow;
     border-color: black;
     border: solid black 1.5px;
     text-align: center;
 }
 
-header img {
+.principal{
+    padding: 0;
+    margin: 0;
     width: 100%;
-    height: 50%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+        
 }
 
 a:hover {
@@ -47,9 +58,16 @@ a:hover {
 
 
 section {
+    box-sizing: border-box;
     background-color: lightgoldenrodyellow;
     min-height: 70%;
-    
+
+}
+
+div {
+    margin: 5px;
+    padding: 15px;
+
 }
 
 section div>h2 {
@@ -79,4 +97,33 @@ section div aside {
     width: 60%;
     display: inline-block;
     align-items: end;
+}
+
+.titulo p {
+    text-decoration: underline ;
+    font-style: italic;
+   
+}
+
+span {
+    font-weight: bold;
+}
+
+table {
+    background-color: grey;
+    padding: 3px;
+
+
+}
+
+th {
+    background-color: orange;
+    padding: 3px;
+
+}
+
+td {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 3px;
 }
